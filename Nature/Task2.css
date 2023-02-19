@@ -1,0 +1,64 @@
+.prd {
+    background: rgba(245, 241, 241, 0.979);
+    max-width: 1400px;
+    padding: 30px;
+  
+}
+
+.dv {
+    background: rgba(19, 16, 16, 0.781);
+    box-shadow: 0 5px 15px rgba(17, 16, 16, 0.5);
+    max-width: 1400px;
+    padding: 15px;
+   
+
+
+}
+
+ul {
+    float: right;
+    display: flex;
+    justify-content: right;
+
+}
+
+ul,
+li {
+    list-style: none;
+    margin-left: 62px;
+    font-size: 15px;
+}
+
+ul,
+li,
+a {
+    color: white;
+    float: none;
+    font-family: Arial;
+    font-weight: normal;
+
+}
+
+body {
+    background-image: url(nature.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.dn {
+    color: white;
+    background: rgba(19, 16, 16, 0.781);
+    box-shadow: 0 5px 15px rgba(17, 16, 16, 0.5);
+    max-width: 600px;
+    padding: 60px;
+    font-size: 100%;
+    float: none;
+    font-family:Arial, sans-serif;
+}

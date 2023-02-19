@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transition</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                transition: width 2s;
+            }
+
+          
+            #lin{
+                transform-timing-function: linear;
+
+            }
+            #ea{
+                transform-timing-function: ease;
+                
+            }
+            #in{
+                transform-timing-function: ease-in;
+                
+            }
+
+            #out{
+                transform-timing-function:ease-out;
+                
+            }
+
+            #inout{
+                transform-timing-function:ease-in-out;
+                
+            }
+            
+            div:hover{
+                width: 200px;
+             height: 200px;
+
+
+            }
+            p{
+                width: 100px;
+         height: 100px;
+                background: red;
+              transition: width 2s, height 2s, transform 2s;
+            }
+            p:hover{
+              
+             transform: rotate(180deg);
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>The transition Property</div>
+        <div id="lin">linear</div>
+        <br>
+        <div id="ea">ease</div>
+        <br>
+        <div id="in">ease in</div>
+        <br>
+        <div id="out">ease out</div>
+        <br>
+        <div id="inout">ease in out</div>
+        <br>
+        <p>
+        <h1 id="rotate">rotate</h1>
+    </p>
+    </body>
+</html>

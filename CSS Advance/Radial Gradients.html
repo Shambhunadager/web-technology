@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Radial Gradients</title>
+    <style>
+        #eve{
+            height: 100px;
+            width: 200px;
+            background-color: red;
+            background-image: radial-gradient(red, yellow,green);
+        }
+
+        #Spec{
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+            background-color: red;
+        }
+        #ell {
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient( circle, red , yellow , green );
+            background-color: red;
+        }
+        #cir {
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient(closest-side, red 7%, yellow 15%, green 60%);
+            background-color: red;
+        }
+        .clo{
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient(farthest-side, red 5%, yellow 25%, green 60%);
+            background-color: red;
+        }
+        .far{
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient(closest-corner, red 6%, yellow 18%, green 40%);
+            background-color: red;
+        }
+        .Corn {
+            height: 100px;
+            width: 150px;
+            background-image: radial-gradient(farthest-corner, red 5%, yellow 10%, green 50%);
+            background-color: red;
+        }
+        
+        .farc {
+            height: 100px;
+            width: 150px;
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+            background-color: red;
+        }
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <h2>Evenly Spaced Color Stops</h2>
+    <div id="eve"></div>
+    <br>
+    <h2>Differently Spaced Color Stops</h2>
+    <div id="Spec"></div>
+    <br>
+    <h2>Shapes</h2>
+    <h5>Ellipse (this is default):</h5>
+    <div id="ell"></div>
+    <br>
+    <h5>Circle:</h5>
+    <div id="cir"></div>
+    <br>
+    <h2>Different Size Keywords</h2>
+    <h5>closest-side</h5>
+    <div class="clo"></div>
+    <br>
+    <h5>farthest-side</h5>
+    <div class="far"></div>
+    <br>
+    <h5>closest-corner</h5>
+    <div class="Corn"></div>
+    <br>
+    <h5>farthest-corner</h5>
+    <div class="farc"></div>
+</body>
+
+</html>

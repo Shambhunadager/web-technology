@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Border Images</title>
+    </head>
+    <style>
+        #bor{
+            border: 10px solid transparent;
+        padding: 15px;
+         border-image: url(BorderImage.JPG) 30 round;
+        }
+        #bord{
+            border: 15px solid transparent;
+        padding: 15px;
+         border-image: url(BorderImage2.PNG) 20 round;
+        }
+        #borde{
+            border: 20px solid transparent;
+        padding: 15px;
+         border-image: url(BorderImage3.PNG) 40 round;
+        }
+    </style>
+    <body>
+        <p id="bor">borderImage</p>
+        <h4>Border original Image</h4>
+        <img src="BorderImage.JPG" alt="BorderImage" width="150px">
+        <br>
+        <p id="bord">borderImage2</p>
+        <h4>Border original Image</h4>
+        <img src="BorderImage2.PNG" alt="BorderImage2" width="150px">
+        <br>
+        <p id="borde">borderImage3</p>
+        <h4>Border original Image</h4>
+        <img src="BorderImage3.PNG" alt="BorderImage3" width="150px">
+        
+        
+    </body>
+</html>

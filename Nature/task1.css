@@ -1,0 +1,14 @@
+body{
+ background-image: url( 'image.JPG');
+
+}
+
+h3,a{
+ color: black;
+
+}
+h1{
+    color: rgb(12, 137, 187);
+    font-size: 260%;
+    
+}

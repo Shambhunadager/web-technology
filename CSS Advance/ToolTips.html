@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Toolltips</title>
+        <style>
+            .tool{
+                position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted red;
+}
+.tool .tex {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tool .tex::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent black transparent;
+}
+.tool:hover .tex {
+  visibility: visible;
+}
+        
+        </style>
+    </head>
+    <body>
+        <br><br><br><br>
+         <center>
+        <h1 class="tool"> Toolltips
+            <span class="tex" >The text</span>
+     
+        </h1>
+    </center>
+    </body>
+</html>

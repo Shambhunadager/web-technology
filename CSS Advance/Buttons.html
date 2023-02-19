@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Buttons</title>
+        <style>
+            button{
+                background-color:rgb(46, 136, 143); 
+          border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+            }
+            .first{
+                border-radius: 5px;
+            }
+            .second{
+                
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+            }
+                .third{
+                    border-radius: 20px;
+                
+            }
+            .four{
+                border-radius: 50px;
+            }
+
+           .click{
+            position: relative;
+  background-color: #adaf4c;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+            }
+            .click:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+            }
+            .click:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+        </style>
+    </head>
+    <body>
+        <button class="first" >button1</button>
+        <button class="second">button2 </button>
+        <button class="thrid">button3</button>
+        <button class="four">button4</button>
+        <br><br><br>
+        <h2>Animated Button</h2>
+        <button class="click">click me</button>
+    </body>
+</html>

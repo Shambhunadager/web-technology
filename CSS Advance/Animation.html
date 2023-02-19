@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            #ani{
+                width: 100px;
+  height: 100px;
+  background-color: pink;
+  animation-name: exam;
+  animation-duration: 4s;
+            }
+            @keyframes exam {
+  from {background-color: pink;}
+  to {background-color: yellow;}
+}
+#delay{       
+ width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: examp;
+  animation-duration: 4s;
+  animation-iteration-count:2s;  /* (OR) animation-delay:2s; (OR)animation-iteration-count:infinte;*/
+  
+}
+
+@keyframes examp {
+  0%   {background-color:black; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color: red; left: opx; top: 0px;}
+} 
+#rever{
+width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  animation-name: examp;
+  animation-duration: 4s;
+  animation-direction:reverse;  
+  
+}
+
+@keyframes examp {
+  0%   {background-color:black; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color: red; left: opx; top: 0px;}
+}
+#fill{ 
+    width: 100px;
+  height: 100px;
+  background: yellow;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px; background-color: green;}
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>Animation</h1>
+        <div id="ani"></div>
+        <h1>Many Times an Animation Should Run</h1>
+        <div id="delay"></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Run Animation in Reverse Direction</h1>
+        <div id="rever"></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>fill-mode For an Animation</h1>
+        <div id="fill"></div>
+        
+    </body>
+</html>

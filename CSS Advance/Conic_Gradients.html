@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conic Gradients</title>
+        <style>
+            #three{
+                height: 100px;
+  width: 150px;
+  background-color: red; 
+  background-image: conic-gradient(red, yellow, green);
+            }
+            #five{
+                height: 100px;
+  width: 150px;
+  background-color: red; 
+  background-image: conic-gradient(red, yellow, green,blue);
+            }
+         
+        
+            #pie{
+                height: 100px;
+  width: 150px;
+  background-color: red; 
+  background-image: conic-gradient(red, yellow, green,blue);
+  border-radius: 50%;
+            }
+            #angle{
+                height: 100px;
+  width: 150px;
+  background-color: red; 
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+  border-radius: 50%;
+            }
+            #position{
+                height: 100px;
+  width: 150px;
+  background-color: red; 
+  background-image: conic-gradient(at 60% 50%, red, yellow, green);
+  border-radius: 50%;
+            }
+            #repeat{
+                height: 100px;
+           width: 150px;
+           background-color: red;
+           background-image: repeating-conic-gradient(red 10%, yellow 20%);
+           border-radius: 50%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1> Three Colors</h1>
+
+<div id="three"></div>
+<br>
+<h1> Five Colors</h1>
+
+<div id="five"></div>
+<br>
+<h1>  Pie Chart</h1>
+
+<div id="pie"></div>
+<br>
+<h1>  Angle</h1>
+
+<div id="angle"></div>
+
+<br><h1> Position</h1>
+
+<div id="position"></div>
+<br>
+<h1> Repeating a Conic Gradient</h1>
+
+<div id="repeat"></div>
+
+    </body>
+</html>

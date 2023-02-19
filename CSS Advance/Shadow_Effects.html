@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shadow Effects</title>
+        <style>
+       .sh{
+        text-shadow: 2px 3px red;
+       }
+       .sha{
+        color: white;
+  text-shadow: 2px 2px 4px #000000;
+       }
+       #mul{
+        text-shadow: 0 0 3px #8a4d4d, 0 0 5px #00ffff;
+       }
+       #border{
+        color: coral;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+       }
+       .box{
+        width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+        box-shadow: 10px 10px;
+       }
+       .light{
+        width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+        box-shadow: 10px 10px 5px lightblue;
+       }
+       .inset{
+        width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+        box-shadow: 10px 10px 5px lightblue inset;
+       }
+       .multi{
+       border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  margin: 15px;
+    }
+    div.im{
+        width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+    }
+    p.pol{
+        padding: 30px;
+    }
+        </style>
+    </head>
+    <body>
+        <h1 class="sh" >welcome</h1>
+        
+        <h1 class="sha">welcome</h1>
+        <h1 id="mul">Multiple Shadows</h1>
+        <h1 id="border">Border around text!</h1>
+        <br>
+      <div class="box">box-shadow</div>
+      <br>
+      <div class="light">box-shadow</div>
+      <br>
+      <div class="inset">box-shadow</div>
+       <br>
+       <div class="multi"> multi box-shadow</div>
+       <br><br>
+       <div class="im">
+        <img src="wallpaper.JPG" alt="wallpaper" style="width: 200px;">
+        <p class="pol"> Polaroid Images</p>
+       </div>
+    </body>
+</html>

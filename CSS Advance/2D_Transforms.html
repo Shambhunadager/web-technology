@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Two-D</title>
+        <style>
+            .trans{
+                width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+            }
+            .rota{
+                width: 300px;
+                height: 100px;
+                background-color: green;
+                border: 1px solid black;
+                transform: rotate(30deg);
+            }
+            .scale{
+                margin: 100px;
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+                transform: scale(3,4);
+            }
+            .scalex{
+                margin: 100px;
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+                transform: scaleX(0.3);
+            }
+            .scaley{
+                margin: 100px;
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+                transform: scaleY(3);
+            }
+            #skew{
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+              
+            }
+            .skewx{
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+              
+                transform: skewX(30deg);
+            }
+            .skewy{
+                width: 100px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid black;
+              
+                transform: skewy(30deg);
+            }
+          
+            #matr{
+                width: 200px;
+                height: 50px;
+                background-color: gray;
+                border: 1px solid black;
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+        #matrix{
+                width: 200px;
+                height: 50px;
+                background-color: blue;
+                border: 1px solid black;
+                transform: matrix(1, 0, 0.5, 1, 150, 0);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>The translate() Method</h1>
+        <div class="trans">The translate() method moves an element from its current position</div>
+    <br><br><br><br><br><br><br>
+    
+        <div class="rota">The translate() method moves an element from its current position</div>
+        <br><br><br><br><br>
+        <h1>The scale() Method</h1>
+        <div class="scale">The scale() Method</div>
+        
+        <h1>The scalex() Method</h1>
+        <div class="scalex">The scaleX() Method</div>
+        
+        <h1>The scaley() Method</h1>
+        <div class="scaley">The scaleY() Method</div>
+       <h1>The skewX() Method</h1>
+        <h6 id="skew">The skewX() Method</h6>
+        <div class="skewx">The scaleY() Method</div>
+        <br><br><br>
+        <div class="skewy">The scaleY() Method</div>
+        <h1>The matrix X Y() Method</h1>
+       
+        <div id="matr">The scaleY() Method</div>
+
+        <div id="matrix">The scaleY() Method</div>
+    </body>
+</html>

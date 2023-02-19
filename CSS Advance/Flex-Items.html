@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex-Items</title>
+        <style>
+             .item{
+                display: flex;
+                
+                background-color: aqua;
+                align-items: stretch;
+            }
+            .item > div{
+                background-color: aliceblue;
+                width: 50px;
+                margin: 5px;
+                line-height: 50px;
+                font-size: 20px;
+                
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="item">
+            <div style="order:  0;" >1</div>  
+            <div style="flex-grow: 1 ;"> 2</div> <!-- (OR) other propertys=  flex-shrink, flex-basis-->
+            <div style="flex-grow: 6;" >3</div>
+        </div>
+        
+    </body>
+</html>

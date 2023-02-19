@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Styling Images</title>
+        <style>
+            .ima{
+                border-radius: 10%; /*50% rounded*/
+                border: 1px solid #4e3737;
+                padding: 8px;
+                
+            }
+            .ima:hover {
+  box-shadow: 0 0 2px 1px rgba(3, 0, 186, 0.89);
+}
+.filter{
+    width: 33%;
+  height: auto;
+  float: left; 
+  max-width: 235px;
+  filter: brightness(250%); /* (OR) blur(px) (OR) contrast(%) (Or) grayscale(%) (or) opacity(%) (or) drop-shadow(8px 8px 10px green)*/
+}
+.flip:hover{
+    transform: scaleX(-1);
+}
+
+        </style>
+    </head>
+    <body>
+        <h1> Styling Images</h1>
+        <img class="ima"  src="wallpaper.JPG" alt="wallpaper" width="100px" height="100px">
+        <h1>Image Filters</h1>
+       
+        <img class="filter" src="farmer_Img.JPG" alt="farmer" width="100px" height="100px" >
+        <br><br><br><br><br><br><br><br>
+     <h1>Flip an Image</h1>
+     <img class="flip" src="wallpaper.JPG" alt="wallpaper"  width="200px" height="200px">
+    </body>
+</html>

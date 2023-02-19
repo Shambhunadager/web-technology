@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background</title>
+    <style>
+        #mul {
+            background-image: url(flower2.GIF), url(paper.JFIF);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15%;
+        }
+
+        .top {
+            background-image: url(flower2.GIF);
+            background-size: 200px 120px;
+            border: 5px solid black;
+            background-repeat: no-repeat;
+            padding: 2%;
+        }
+
+        .con {
+            background-image: url(flower2.GIF);
+            background-size: contain;
+            border: 1px solid black;
+            background-repeat: no-repeat, repeat;
+            height: 120px;
+            width: 150px;
+        }
+
+        .cove {
+            background-image: url(flower2.GIF);
+            background-size: cover;
+            border: 1px solid black;
+            background-repeat: no-repeat, repeat;
+            height: 120px;
+            width: 150px;
+        }
+
+        .define {
+            background-image: url(flower2.GIF);
+
+            border: 1px solid black;
+            background-repeat: no-repeat, repeat;
+            height: 120px;
+            width: 150px;
+        }
+
+        .multi {
+            background: url(flower2.GIF) left top no-repeat,
+                url(flower.PNG) right bottom no-repeat, url(paper.JFIF) left top repeat;
+            padding: 10%;
+            background-size: 50px, 130px, auto;
+        }
+
+        .clip {
+            border: 10px dotted black;
+            padding: 20px;
+            background: rgb(166, 255, 0);
+        }
+
+        .box {
+            border: 10px dotted black;
+            padding: 20px;
+            background-color: rgb(22, 204, 16);
+            background-clip: padding-box;
+        }
+
+        .content {
+            border: 10px dotted black;
+            padding: 20px;
+            background-clip: content-box;
+        }
+
+        .full {
+            background-image: url(wallpaper.JPG);
+            background-size: cover;
+            padding: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Multiple Backgrounds</h2>
+    <p id="mul">
+        The different background images are separated by commas,
+        and the images are stacked on top of each other,
+        where the first image is closest to the viewer.</p>
+    <br>
+    <div class="top">
+        <h3> Background Size </h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+    <br><br>
+    <div class="con">
+        <h3> Background Size: contain: </h3>
+        <p> Background Size: contain</p>
+
+    </div>
+    <br><br>
+    <div class="cove">
+        <h3> Background Size: cover: </h3>
+        <p> Background Size: cover:</p>
+
+    </div>
+    <br><br>
+    <div class="define">
+        <h3> Background Size: defined:</h3>
+        <p> Background Size: defined:</p>
+        <br><br>
+    </div>
+    <br><br>
+    <div class="multi">
+        <h3> Multiple Background Images</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div class="clip">
+        <h3> background-clip Property</h3>
+        <p>No background-clip (border-box is default)</p>
+    </div>
+    <br>
+    <p class="box">No background-clip (border-box is default)</p>
+    <p class="content">background-clip: content-box:</p>
+    <br>
+    <div class="full">
+        <h1>Full Page Background Image</h1>
+        <p>You could also use different background properties on a to create a hero image
+            (a large image with text), and place it where you want.</p>
+    </div>
+</body>
+
+</html>
